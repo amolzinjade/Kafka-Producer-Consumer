@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "419efaf9-6602-4f90-8bd5-06ef6140d4a3",
+		"name": "EmployeeData",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Publish Employee Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employeeId\":\"1234\",\r\n    \"employeeName\":\"Amol\",\r\n    \"salary\":\"3445\",\r\n    \"deptId\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/kafka/publish/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kafka",
+						"publish",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Publish Department Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deptId\":\"1\",\r\n    \"deptName\":\"Technology\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/kafka/publish/department",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kafka",
+						"publish",
+						"department"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
