@@ -22,7 +22,7 @@ public class KafkaConsumerListener {
         {
 
             System.out.println("Consumed Json message:"+ department);
-            final String storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=kafkapocamol;AccountKey=aloisFSJjF4eaCGCOfipKt/aCmHfWWf2SBSuUDEr9dZItM+wozY6m/VbRKU9wNQ+EHnibBSzkn1N+AStexftag==;EndpointSuffix=core.windows.net";
+            final String storageConnectionString = "";
             // Retrieve storage account from connection-string.
             CloudStorageAccount storageAccount = CloudStorageAccount.parse(storageConnectionString);
 
@@ -63,7 +63,7 @@ public class KafkaConsumerListener {
         try
         {
             System.out.println("Consumed Json message:"+ employee);
-            final String storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=kafkapocamol;AccountKey=aloisFSJjF4eaCGCOfipKt/aCmHfWWf2SBSuUDEr9dZItM+wozY6m/VbRKU9wNQ+EHnibBSzkn1N+AStexftag==;EndpointSuffix=core.windows.net";
+            final String storageConnectionString = "";
             // Retrieve storage account from connection-string.
             CloudStorageAccount storageAccount = CloudStorageAccount.parse(storageConnectionString);
 
